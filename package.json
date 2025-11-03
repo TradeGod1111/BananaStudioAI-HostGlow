@@ -1,38 +1,22 @@
 {
-  "name": "🍌-hostglow-by-banana-studio-ai",
+  "name": "bananastudioai-hostglow",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.1.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "@google/genai": "^1.28.0",
-    "react-dom": "^19.2.0",
-    "react": "^19.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
-  }
-}
-{
-  "scripts": {
+    "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start -p 3000",
     "e2e": "playwright test",
     "ci": "npm run build && (npm run start &) && npx wait-on http://localhost:3000 && npm run e2e"
   },
+  "dependencies": {
+    "next": "15.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.0",
     "@playwright/test": "^1.48.0",
-    "pixelmatch": "^5.3.0",
-    "pngjs": "^7.0.0",
     "wait-on": "^7.2.0"
   }
 }
-
